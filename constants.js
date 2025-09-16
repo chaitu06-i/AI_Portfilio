@@ -23,7 +23,7 @@ int main() {
     Developer chaitanya = {
         "Godiselapalli Chaitanya Gowd",
         "Trainee at Emertxe Information Technology",
-        "B.Tech ECE, CGPA 8.92/10",
+        "B.Tech ECE, CGPA 8.96/10",
         "Embedded Systems Development",
         "Address Book Application in C",
         "Creating efficient real-world solutions"
