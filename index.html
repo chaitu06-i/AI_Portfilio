@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitanya Gowd - Embedded Systems Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+        <p>Loading Portfolio...</p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Chaitanya Gowd</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" class="nav-link">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="profile-photo">
+                        <img src="./images/profile-photo.jpg" alt="Chaitanya Gowd" class="profile-img" onerror="this.style.display='none';">
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </h1>
+                    <p class="hero-role">Trainee at Emertxe Information Technology</p>
+                    <p class="hero-description">
+                        I am Chaitu, an Electronics and Communication Engineering graduate with strong skills in Embedded C/C++ and Linux OS. I am currently working on an Address Book application in C, focusing on file handling and data structures. I also have major project experience in IoT and UAV-based Plant Disease Identification and Pesticide Recommendation. Passionate about embedded systems development, I aim to create efficient, real-world solutions that integrate hardware and software.
+                    </p>
+                    <a href="#" class="resume-btn liquid-glass">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+                <div class="hero-code">
+                    <div class="code-editor">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="code-title">developer_info.c</div>
+                        </div>
+                        <div class="code-content">
+                            <pre id="code-display"></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            <div class="timeline" id="timeline">
+                <!-- Timeline will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Service Section -->
+    <section id="service" class="service">
+        <div class="container">
+            <h2 class="section-title">Social Service & Leadership</h2>
+            <div class="service-content">
+                <div class="service-hero">
+                    <div class="ncc-badge">
+                        <i class="fas fa-medal"></i>
+                        <h3>NCC Cadet</h3>
+                        <p>National Cadet Corps</p>
+                    </div>
+                    <div class="service-description">
+                        <h4>Serving the Nation with Pride</h4>
+                        <p>As an NCC cadet, I have dedicated myself to the values of unity, discipline, and service to the nation. Through rigorous training and community service activities, I have developed leadership skills and a strong sense of social responsibility.</p>
+                    </div>
+                </div>
+                <div class="service-grid" id="service-grid">
+                    <!-- Service activities will be loaded dynamically -->
+                </div>
+                <div class="ncc-gallery">
+                    <h3>NCC Memories</h3>
+                    <div class="gallery-grid" id="ncc-gallery">
+                        <!-- NCC photos will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates & Achievements</h2>
+            <div class="certificates-content">
+                <div class="certificates-intro">
+                    <h3>Professional Development</h3>
+                    <p>A collection of certificates from internships, training programs, and professional development courses that showcase my commitment to continuous learning and skill enhancement.</p>
+                </div>
+                <div class="certificates-gallery" id="certificates-gallery">
+                    <!-- Certificates will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" id="contact-info">
+                    <!-- Contact info will be loaded dynamically -->
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn liquid-glass">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-status" class="form-status" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Chaitanya Gowd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Photo Modal -->
+    <div id="photo-modal" class="photo-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-image" src="" alt="">
+        </div>
+    </div>
+
+    <script src="js/constants.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+</head>
+<body>
+    <h1>Image Loading Test</h1>
+    
+    <h2>Profile Photo</h2>
+    <img src="images/profile-photo.jpg" alt="Profile" style="width: 200px; border: 2px solid red;">
+    
+    <h2>Certificate Images</h2>
+    <img src="images/cert-drdo.jpg" alt="DRDO" style="width: 200px; border: 2px solid blue;">
+    <img src="images/cert-iit.jpg" alt="IIT" style="width: 200px; border: 2px solid green;">
+    
+    <h2>NCC Photos</h2>
+    <img src="images/ncc-award.jpg" alt="NCC Award" style="width: 200px; border: 2px solid orange;">
+    <img src="images/ncc-camp.jpg" alt="NCC Camp" style="width: 200px; border: 2px solid purple;">
+    
+    <script>
+        console.log('Test page loaded');
+        
+        // Test if images load
+        const images = document.querySelectorAll('img');
+        images.forEach((img, index) => {
+            img.onload = () => console.log(`Image ${index + 1} loaded: ${img.src}`);
+            img.onerror = () => console.error(`Image ${index + 1} failed: ${img.src}`);
+        });
+    </script>
+</body>
+</html>
